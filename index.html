@@ -1,16 +1,23 @@
-<html><head><base href="https://hk.siumaimap.com/" />
+<html><head><base href="https://hksiumaimap.com/" />
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:title" content="香港燒賣地圖 - 發現城中最佳點心">
-<meta property="og:description" content="Discover the best dim sum spots in Hong Kong with our comprehensive Siu Mai map.">
-<meta property="og:image" content="URL_to_your_image">
-<meta property="og:url" content="https://hk.siumaimap.com/">
-<meta name="twitter:card" content="summary_large_image">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the best dim sum spots in Hong Kong with our comprehensive Siu Mai map.">
+  <meta name="keywords" content="Hong Kong, Siu Mai, dim sum, food map, best dim sum, food guide">
+  <meta name="author" content="Your Name">
 <title>香港燒賣地圖 - 發現城中最佳點心</title>
+ <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXX-Y');
+  </script>
+  <!-- End Google Analytics -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7633806982533703"
+     crossorigin="anonymous"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
-
   :root {
     --primary-color: #3498db;
     --secondary-color: #2980b9;
@@ -59,32 +66,13 @@
   }
   #map-container {
     width: 100%;
-    height: calc(100vh - 180px); /* Adjusted for new header layout */
+    height: calc(100vh - 150px); /* Adjusted for header without ad banner */
     position: relative;
   }
   #embedded-map {
     width: 100%;
     height: 100%;
     border: none;
-  }
-  #ad-banner {
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8em;
-    color: #333;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-    flex-wrap: wrap;
-    text-align: center;
-    min-height: 30px;
-  }
-  #ad-banner a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
   }
   #social-container {
     display: flex;
@@ -143,9 +131,6 @@
     #contact-info {
       font-size: 0.7em;
     }
-    #ad-banner {
-      font-size: 0.7em;
-    }
   }
 </style>
 </head>
@@ -176,9 +161,6 @@
   <div id="map-container">
     <iframe id="embedded-map" src="https://www.google.com/maps/d/embed?mid=18MFEIWjxLs4jOPgQEinSlDkEsUQmCQad&ehbc=2E312F"></iframe>
   </div>
-  <div id="ad-banner">
-    <!-- Ad content is blank -->
-  </div>
 </div>
 
 <script>
@@ -186,24 +168,15 @@
 function adjustLayout() {
   var header = document.querySelector('header');
   var mapContainer = document.getElementById('map-container');
-  var adBanner = document.getElementById('ad-banner');
   
   if (window.innerWidth <= 768) {
     // Mobile layout
-    mapContainer.style.height = 'calc(100vh - ' + (header.offsetHeight + adBanner.offsetHeight) + 'px)';
+    mapContainer.style.height = 'calc(100vh - ' + header.offsetHeight + 'px)';
   } else {
     // Desktop layout
-    mapContainer.style.height = 'calc(100vh - 180px)'; // Adjusted for new header layout
+    mapContainer.style.height = 'calc(100vh - 150px)'; // Adjusted for header without ad banner
   }
 }
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-XXXXX-Y');
-</script>
 
 // Call adjustLayout on page load and window resize
 window.addEventListener('load', adjustLayout);
