@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover the best dim sum spots in Hong Kong with our comprehensive Siu Mai map.">
     <meta name="keywords" content="Hong Kong, Siu Mai, dim sum, food map, best dim sum, food guide, Hong Kong dim sum, top Siu Mai places, dim sum restaurants, best Siu Mai in Hong Kong, Hong Kong food map, dim sum guide, dim sum in Hong Kong, local food guide, Hong Kong cuisine, food recommendations, dim sum locations, Hong Kong street food, food blog, Hong Kong food experiences, top dim sum spots, Hong Kong dining, food and travel, culinary guide, best dim sum places">
     <title>香港燒賣地圖 - 發現城中最佳點心</title>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https://www.google-analytics.com; frame-src https://www.google.com; connect-src 'self' https://www.google-analytics.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https://www.google-analytics.com; frame-src https://www.google.com; connect-src 'self' https://www.google-analytics.com;">
     <style>
         /* Inline critical CSS */
         :root {
@@ -23,7 +24,7 @@
             font-weight: 400;
             font-display: swap;
             src: local('Noto Sans TC Regular'), local('NotoSansTC-Regular'),
-                 url(data:font/woff2;base64,d09GMgABAAAAAAKEAA0AAAAABkQAAAIxAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCUhEICoFYgUYLCAABNgIkAxgEIAWFCAc4G5wFyK6HrQKRLoqUZFZEMPDw/3q+975Zs3wNThg2QEEjVHmVSTYRmDWtLdVHtLqC1dVV8AAsXMCB+sCBWPxwWzk3P5CflUgEcb/3U5VXy0Q2hATCMsFj/SyKwShcofD/53J6k9DA82tpkKOoqgor1MoL6m8tDJas7MxazpUrioHdu1W8r5NJjv/FAJBnXz6/KwCAmgBAHtjPdwC5BwDIt38AkNLfACDJDwDQvr5CdceS2q6tB3jL/70+WL7hVql/uxQ+fNrcZW5kYDsvH5+1c3NqYMfGBga2r5aHj4+3j7e3p5fX2tWzNmwCBICAAGDuxk3AwEbkPkSCQMJAQkESQBJB0kHyQCpAGkA6QVaC9IEMgAyCLAEZBVkKMgayDBJGpEMIKTp2rNQxkwhsxJ6FQz+Kph4K9+rG96Lr+jGifW74YiDNrOi5/vL6o8l1I4a6MYMLX6zstGBIzzeT38ZEYWzvH2v/LG2zcNTgL5tO/AQSn5YH8zxIHQMECCCBFCpECaE+6kApDRCGkQLJlIZUykAaw8jIAIKRo0EZGgNl/sQDwnjMn3H+wQUsmP7/nUtAGAz/5v8LhIyQxv+/DQwq/0tRAGALcAVn8PwbZzcw6JJFdrj9/RNkSEqEvANgDvXQAC0wDk3QCm3QDh2wBH3QDwOwFIZhBEZhDMZhAiZhCqZhBsahAWESZtEGEzAJUzANMzALczCPERjFWIzDeEzAJEzBNMzALMzBPBTASZiCMzAD8ygBY6UKm8VRWAsnsCEV3o8HlTR2YxTYdPZXlr/gUMECBguIQCQiEIoQhCEWMUhCEjiwUAMcXGoBHQVooUAHHHyogB4G6GCEHAaYYYATZlhLuKP6ABRQQgU1NNBCBx0MMMIEO+wFDC7YY7GhUsVSDX8hkAT+zs4m3jtIlHANQYZsecqUK1MjrU7zHOXk5Muq0jW/UF5BpVrVSpQqUylPvkKlKpSrUqVChQq1atSqU69Bg0bNmrXhWEgLEm0oEYbVo89QJCQYCYmGUmEqS6Y8efIVKFSkSBgiEYt4JDcODgwxCAcOLNRKp/zMTzx7z5QBTiKUcvRqUh0+WQr8NRz5wlHD4dDfFAxGA2EsaPw7RiNBIxi2h0aCBEiSKMmSJEmx4uoD4xZbY4utscWeWBNLba01ttlmjx2x1VY7aosddtlpl9322J9Nqa2xwzY77bPfXnvstNVRR+y3xyH7HHHYcSdttc9+J5zwuTPOOuuLk6456YRrrjnltJuUkWHCZCHChTUODAAA) format('woff2');
+                 url(data:font/woff2;base64,d09GMgABAAAAAAKEAA0AAAAABkQAAAIxAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCUhEICoFYgUYLCAABNgIkAxgEIAWFCAc4G5wFyK6HrQKRLoqUZFZEMPDw/3q+975Zs3wNThg2QEEjVHmVSTYRmDWtLdVHtLqC1dVV8AAsXMCB+sCBWPxwWzk3P5CflUgEcb/3U5VXy0Q2hATCMsFj/SyKwShcofD/53J6k9DA82tpkKOoqgor1MoL6m8tDJas7MxazpUrioHdu1W8r5NJjv/FAJBnXz6/KwCAmgBAHtjPdwC5BwDIt38AkNLfACDJDwDQvr5CdceS2q6tB3jL/70+WL7hVql/uxQ+fNrcZW5kYDsvH5+1c3NqYMfGBga2r5aHj4+3j7e3p5fX2tWzNmwCBICAAGDuxk3AwEbkPkSCQMJAQkESQBJB0kHyQCpAGkA6QVaC9IEMgAyCLAEZBVkKMgayDBJGpEMIKTp2rNQxkwhsxJ6FQz+Kph4K9+rG96Lr+jGifW74YiDNrOi5/vL6o8l1I4a6MYMLX6zstGBIzzeT38ZEYWzvH2v/LG2zcNTgL5tO/AQSn5YH8zxIHQMECCCBFCpECaE+6kApDRCGkQLJlIZUykAaw8jIAIKRo0EZGgNl/sQDwnjMn3H+wQUsmP7/nUtAGAz/5v8LhIyQxv+/DQwq/0tRAGALcAVn8PwbZzcw6JJFdrj9/RNkSEqEvANgDvXQAC0wDk3QCm3QDh2wBH3QDwOwFIZhBEZhDMZhAiZhCqZhBsahAWESZtEGEzAJUzANMzALczCPERjFWIzDeEzAJEzBNMzALMzBPBTASZiCMzAD8ygBY6UKm8VRWAsnsCEV3o8HlTR2YxTYdPZXlr/gUMECBguIQCQiEIoQhCEWMUhCEjiwUAMcXGoBHQVooUAHHHyogB4G6GCEHAaYYYATZlhLuKP6ABRQQgU1NNBCBx0MMMIEO+wFDC7YY7GhUsVSDX8hkAT+zs4m3jtIlHANQYZsecqUK1MjrU7zHOXk5Muq0jW/UF5BpVrVSpQqUylPvkKlKpSrUqVChQq1atSqU69Bg0bNmrXhWEgLEm0oEYbVo89QJCQYCYmGUmEqS6Y8efIVKFSkSBgiEYt4JDcODgwxCAcOLNRKp/zMTzx7z5QBTiKUcvRqUh0+WQr8NRz5wlHD4dDfFAxGA2EsaPw7RiNBIxi2h0aCBEiSKMmSJEmx4uoD4xZbY4utsceeWBNLba01ttlmjx2x1VY7aosddtlpl9322J9Nqa2xwzY77bPfXnvstNVRR+y3xyH7HHHYcSdttc9+J5zwuTPOOuuLk6456YRrrjnltJuUkWHCZCHChTUODAAA) format('woff2');
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
         }
 
@@ -96,7 +97,7 @@
         #social-container {
             position: fixed;
             top: 22.5px;
-            right: 22.5px;
+            right: -200px; /* Start off-screen */
             display: flex;
             flex-direction: column;
             align-items: flex-end;
@@ -104,6 +105,10 @@
             background-color: rgba(0, 0, 0, 0.6);
             padding: 6.75px;
             border-radius: 4.5px;
+            transition: right 0.5s ease-in-out;
+        }
+        #social-container:hover {
+            right: 22.5px; /* Slide in on hover */
         }
         .social-link {
             display: flex;
@@ -127,7 +132,7 @@
             margin-right: 4px;
         }
         #contact-info {
-            font-size: 0.9em;
+            font-size: 16px; /* Decreased by 2 from the original 18px */
             color: var(--text-color);
             text-align: right;
         }
@@ -141,7 +146,6 @@
             }
             #social-container {
                 top: 11.25px;
-                right: 11.25px;
             }
             #content-container {
                 padding: 11.25px;
@@ -207,17 +211,11 @@
         adjustLayout();
         window.addEventListener('resize', adjustLayout);
 
-        if ('IntersectionObserver' in window) {
-            var observer = new IntersectionObserver(function(entries) {
-                if (entries[0].isIntersecting) {
-                    loadMap();
-                    observer.unobserve(mapContainer);
-                }
-            }, {threshold: 0.1});
-
-            observer.observe(mapContainer);
+        // Defer map loading
+        if (window.requestIdleCallback) {
+            requestIdleCallback(loadMap);
         } else {
-            loadMap();
+            setTimeout(loadMap, 1000);
         }
     });
     </script>
