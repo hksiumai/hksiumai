@@ -98,7 +98,8 @@
             top: 22.5px;
             right: 22.5px;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            align-items: flex-end;
             z-index: 1001;
             background-color: rgba(0, 0, 0, 0.6);
             padding: 6.75px;
@@ -110,6 +111,7 @@
             color: white;
             text-decoration: none;
             transition: opacity 0.3s ease;
+            margin-bottom: 6.75px;
         }
         .social-link:hover {
             opacity: 0.8;
@@ -128,7 +130,6 @@
             font-size: 0.9em;
             color: var(--text-color);
             text-align: right;
-            margin-left: 11.25px;
         }
 
         @media (max-width: 768px) {
@@ -139,13 +140,8 @@
                 font-size: 1.9125em;
             }
             #social-container {
-                flex-direction: column;
-                align-items: flex-end;
                 top: 11.25px;
                 right: 11.25px;
-            }
-            .social-link {
-                margin-bottom: 6.75px;
             }
             #content-container {
                 padding: 11.25px;
