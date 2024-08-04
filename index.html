@@ -7,36 +7,11 @@
     <meta name="description" content="Discover the best dim sum spots in Hong Kong with our comprehensive Siu Mai map.">
     <meta name="keywords" content="Hong Kong, Siu Mai, dim sum, food map, best dim sum, food guide, Hong Kong dim sum, top Siu Mai places, dim sum restaurants, best Siu Mai in Hong Kong, Hong Kong food map, dim sum guide, dim sum in Hong Kong, local food guide, Hong Kong cuisine, food recommendations, dim sum locations, Hong Kong street food, food blog, Hong Kong food experiences, top dim sum spots, Hong Kong dining, food and travel, culinary guide, best dim sum places">
     <title>香港燒賣地圖 - 發現城中最佳點心</title>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self'; object-src 'none';">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https://www.google-analytics.com; frame-src https://www.google.com; connect-src 'self' https://www.google-analytics.com;">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7633806982533703"
      crossorigin="anonymous"></script>
     <style>
-        /* Font-display strategy */
-        @font-face {
-            font-family: 'Noto Sans TC';
-            font-style: normal;
-            font-weight: 300;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/notosanstc/v32/o-0NIpQlx3QUlC5A4PNjThZVatyB1Wk.woff2) format('woff2');
-        }
-        @font-face {
-            font-family: 'Noto Sans TC';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/notosanstc/v32/o-0IIpQlx3QUlC5A4PNr5TRA.woff2) format('woff2');
-        }
-        @font-face {
-            font-family: 'Noto Sans TC';
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/notosanstc/v32/o-0NIpQlx3QUlC5A4PNjXhFVatyB1Wk.woff2) format('woff2');
-        }
-
+        /* Inline critical CSS */
         :root {
             --primary-color: #0056b3;
             --secondary-color: #003d82;
@@ -44,41 +19,46 @@
             --background-color: #f0f0f0;
         }
 
+        @font-face {
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Noto Sans TC Regular'), local('NotoSansTC-Regular'),
+                 url(data:font/woff2;base64,d09GMgABAAAAAAKEAA0AAAAABkQAAAIxAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCUhEICoFYgUYLCAABNgIkAxgEIAWFCAc4G5wFyK6HrQKRLoqUZFZEMPDw/3q+975Zs3wNThg2QEEjVHmVSTYRmDWtLdVHtLqC1dVV8AAsXMCB+sCBWPxwWzk3P5CflUgEcb/3U5VXy0Q2hATCMsFj/SyKwShcofD/53J6k9DA82tpkKOoqgor1MoL6m8tDJas7MxazpUrioHdu1W8r5NJjv/FAJBnXz6/KwCAmgBAHtjPdwC5BwDIt38AkNLfACDJDwDQvr5CdceS2q6tB3jL/70+WL7hVql/uxQ+fNrcZW5kYDsvH5+1c3NqYMfGBga2r5aHj4+3j7e3p5fX2tWzNmwCBICAAGDuxk3AwEbkPkSCQMJAQkESQBJB0kHyQCpAGkA6QVaC9IEMgAyCLAEZBVkKMgayDBJGpEMIKTp2rNQxkwhsxJ6FQz+Kph4K9+rG96Lr+jGifW74YiDNrOi5/vL6o8l1I4a6MYMLX6zstGBIzzeT38ZEYWzvH2v/LG2zcNTgL5tO/AQSn5YH8zxIHQMECCCBFCpECaE+6kApDRCGkQLJlIZUykAaw8jIAIKRo0EZGgNl/sQDwnjMn3H+wQUsmP7/nUtAGAz/5v8LhIyQxv+/DQwq/0tRAGALcAVn8PwbZzcw6JJFdrj9/RNkSEqEvANgDvXQAC0wDk3QCm3QDh2wBH3QDwOwFIZhBEZhDMZhAiZhCqZhBsahAWESZtEGEzAJUzANMzALczCPERjFWIzDeEzAJEzBNMzALMzBPBTASZiCMzAD8ygBY6UKm8VRWAsnsCEV3o8HlTR2YxTYdPZXlr/gUMECBguIQCQiEIoQhCEWMUhCEjiwUAMcXGoBHQVooUAHHHyogB4G6GCEHAaYYYATZlhLuKP6ABRQQgU1NNBCBx0MMMIEO+wFDC7YY7GhUsVSDX8hkAT+zs4m3jtIlHANQYZsecqUK1MjrU7zHOXk5Muq0jW/UF5BpVrVSpQqUylPvkKlKpSrUqVChQq1atSqU69Bg0bNmrXhWEgLEm0oEYbVo89QJCQYCYmGUmEqS6Y8efIVKFSkSBgiEYt4JDcODgwxCAcOLNRKp/zMTzx7z5QBTiKUcvRqUh0+WQr8NRz5wlHD4dDfFAxGA2EsaPw7RiNBIxi2h0aCBEiSKMmSJEmx4uoD4xZbY4utscWeWBNLba01ttlmjx2x1VY7aosddtlpl9322J9Nqa2xwzY77bPfXnvstNVRR+y3xyH7HHHYcSdttc9+J5zwuTPOOuuLk6456YRrrjnltJuUkWHCZCHChTUODAAA) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
         body, html {
             height: 100%;
             margin: 0;
             padding: 0;
-            font-family: 'Noto Sans TC', 'Microsoft YaHei', 'SimHei', sans-serif;
+            font-family: 'Noto Sans TC', sans-serif;
             display: flex;
             flex-direction: column;
             background-color: var(--background-color);
-            font-size: 16px;
+            font-size: 32px; /* Doubled from 16px */
+            line-height: 1.5;
         }
         header {
             background-color: var(--primary-color);
             color: var(--text-color);
-            padding: 15px 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 30px 40px; /* Doubled from 15px 20px */
+            box-shadow: 0 8px 12px rgba(0,0,0,0.1);
             display: flex;
             flex-direction: column;
             align-items: center;
             position: relative;
             z-index: 1000;
         }
-        .header-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
         h1 {
-            margin: 0 0 10px 0;
-            font-size: 2em;
+            margin: 0 0 20px 0; /* Doubled from 0 0 10px 0 */
+            font-size: 4em; /* Doubled from 2em */
             font-weight: 700;
             color: var(--text-color);
-            letter-spacing: 1px;
+            letter-spacing: 2px; /* Doubled from 1px */
             text-align: center;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         #content-container {
             flex-grow: 1;
@@ -86,17 +66,17 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 40px; /* Doubled from 20px */
         }
         #map-container {
             width: 100%;
-            max-width: 800px;
+            max-width: 1600px; /* Doubled from 800px */
             height: 0;
-            padding-bottom: 75%; /* 4:3 Aspect Ratio */
+            padding-bottom: 75%;
             position: relative;
             overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 16px; /* Doubled from 8px */
+            box-shadow: 0 8px 12px rgba(0,0,0,0.1);
         }
         #map-container iframe {
             position: absolute;
@@ -109,26 +89,26 @@
         #social-container {
             display: flex;
             align-items: center;
-            margin: 10px 0;
+            margin: 20px 0; /* Doubled from 10px 0 */
         }
         .social-link {
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            padding: 8px;
+            padding: 16px; /* Doubled from 8px */
             border-radius: 50%;
             text-decoration: none;
             transition: opacity 0.3s ease, background-color 0.3s ease;
-            margin: 0 5px;
+            margin: 0 10px; /* Doubled from 0 5px */
         }
         .social-link:hover {
             opacity: 0.9;
             background-color: var(--secondary-color);
         }
         .social-link svg {
-            width: 24px;
-            height: 24px;
+            width: 48px; /* Doubled from 24px */
+            height: 48px; /* Doubled from 24px */
         }
         #facebook-link {
             background-color: #1877f2;
@@ -138,138 +118,121 @@
         }
         .social-text {
             color: var(--text-color);
-            margin-left: 10px;
-            font-size: 1em;
+            margin-left: 20px; /* Doubled from 10px */
+            font-size: 2em; /* Doubled from 1em */
             font-weight: 500;
         }
         #contact-info {
-            font-size: 0.9em;
+            font-size: 1.8em; /* Doubled from 0.9em */
             color: var(--text-color);
             text-align: center;
-            margin-top: 5px;
+            margin-top: 10px; /* Doubled from 5px */
             background-color: rgba(0, 0, 0, 0.1);
-            padding: 5px 10px;
-            border-radius: 4px;
+            padding: 10px 20px; /* Doubled from 5px 10px */
+            border-radius: 8px; /* Doubled from 4px */
         }
 
         @media (max-width: 768px) {
             header {
-                padding: 10px;
+                padding: 20px; /* Doubled from 10px */
             }
             h1 {
-                font-size: 1.7em;
+                font-size: 3.4em; /* Doubled from 1.7em */
             }
             #social-container {
-                margin: 5px 0;
+                margin: 10px 0; /* Doubled from 5px 0 */
             }
             .social-text {
                 display: none;
             }
             #contact-info {
-                font-size: 0.8em;
+                font-size: 1.6em; /* Doubled from 0.8em */
             }
             #content-container {
-                padding: 10px;
+                padding: 20px; /* Doubled from 10px */
             }
             #map-container {
-                padding-bottom: 100%; /* 1:1 Aspect Ratio for mobile */
+                padding-bottom: 100%;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1>香港燒賣地圖</h1>
-            <div id="social-container">
-                <a id="facebook-link" class="social-link" href="https://www.facebook.com/HongKongSiuMaiConcernGroup?locale=zh_HK" target="_blank" rel="noopener noreferrer" title="香港燒賣關注組 Facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                    </svg>
-                </a>
-                <a id="instagram-link" class="social-link" href="https://www.instagram.com/HKsiumaiconcerngroup" target="_blank" rel="noopener noreferrer" title="香港燒賣關注組 Instagram">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
-                        <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
-                    </svg>
-                </a>
-                <span class="social-text">香港燒賣關注組</span>
-            </div>
-            <div id="contact-info">
-                聯絡我們：hksiumaimap@gmail.com
-            </div>
+        <h1>香港燒賣地圖</h1>
+        <div id="social-container">
+            <a id="facebook-link" class="social-link" href="https://www.facebook.com/HongKongSiuMaiConcernGroup?locale=zh_HK" target="_blank" rel="noopener noreferrer" title="香港燒賣關注組 Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+            </a>
+            <a id="instagram-link" class="social-link" href="https://www.instagram.com/HKsiumaiconcerngroup" target="_blank" rel="noopener noreferrer" title="香港燒賣關注組 Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                </svg>
+            </a>
+            <span class="social-text">香港燒賣關注組</span>
+        </div>
+        <div id="contact-info">
+            聯絡我們：hksiumaimap@gmail.com
         </div>
     </header>
 
     <div id="content-container">
         <div id="map-container">
-            <iframe data-src="https://www.google.com/maps/d/embed?mid=18MFEIWjxLs4jOPgQEinSlDkEsUQmCQad&ehbc=2E312F" width="640" height="480" title="香港燒賣地圖" name="hk-siumai-map"></iframe>
+            <noscript>
+                <p>請啟用JavaScript以檢視互動式地圖。</p>
+                <img src="static-map.jpg" alt="香港燒賣地圖靜態版本" width="1600" height="1200">
+            </noscript>
         </div>
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            function adjustLayout() {
-                var header = document.querySelector('header');
-                var contentContainer = document.getElementById('content-container');
-                var availableHeight = window.innerHeight - header.offsetHeight;
-                contentContainer.style.height = availableHeight + 'px';
-            }
+    document.addEventListener('DOMContentLoaded', function() {
+        var mapContainer = document.getElementById('map-container');
+        var header = document.querySelector('header');
+        var contentContainer = document.getElementById('content-container');
 
-            adjustLayout();
-            window.addEventListener('resize', adjustLayout);
+        function adjustLayout() {
+            var availableHeight = window.innerHeight - header.offsetHeight;
+            contentContainer.style.height = availableHeight + 'px';
+        }
 
-            // Lazy load the map
-            var mapContainer = document.getElementById('map-container');
-            var mapIframe = mapContainer.querySelector('iframe');
-            
-            function loadMap() {
-                if (!mapIframe.src) {
-                    mapIframe.src = mapIframe.getAttribute('data-src');
-                }
-            }
+        function loadMap() {
+            var iframe = document.createElement('iframe');
+            iframe.src = "https://www.google.com/maps/d/embed?mid=18MFEIWjxLs4jOPgQEinSlDkEsUQmCQad&ehbc=2E312F";
+            iframe.width = "1280"; // Doubled from 640
+            iframe.height = "960"; // Doubled from 480
+            iframe.title = "香港燒賣地圖";
+            iframe.loading = "lazy";
+            mapContainer.appendChild(iframe);
+        }
 
+        adjustLayout();
+        window.addEventListener('resize', adjustLayout);
+
+        if ('IntersectionObserver' in window) {
             var observer = new IntersectionObserver(function(entries) {
                 if (entries[0].isIntersecting) {
                     loadMap();
-                    observer.disconnect();
+                    observer.unobserve(mapContainer);
                 }
-            });
+            }, {threshold: 0.1});
 
             observer.observe(mapContainer);
-        });
-    </script>
-
-    <!-- Google Tag Manager -->
-    <script>
-    // Defer Google Tag Manager loading
-    window.addEventListener('load', function() {
-        setTimeout(function() {
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-XXXXXXX');
-        }, 2000); // Delay of 2 seconds
+        } else {
+            loadMap();
+        }
     });
     </script>
-    <!-- End Google Tag Manager -->
 
-    <!-- Cache Control Headers -->
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
-    // This script demonstrates how you might set cache control headers
-    // Note: This JavaScript cannot actually set HTTP headers. 
-    // You need to configure these on your server.
-
-    // For Google Maps API
-    // Cache-Control: public, max-age=1800, stale-while-revalidate=3600
-
-    // For Google CDN (gstatic.com)
-    // Cache-Control: public, max-age=3000, stale-while-revalidate=6000
-
-    // For Google Analytics
-    // Cache-Control: public, max-age=7200, stale-while-revalidate=14400
-
-    console.log('Remember to set appropriate cache headers on your server!');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID', {'anonymize_ip': true});
     </script>
 </body>
 </html>
