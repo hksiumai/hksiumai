@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香港燒賣地圖 - 發現城中最佳點心</title>
     <meta name="description" content="Discover the best Siu Mai spots in Hong Kong with our comprehensive Siu Mai map.">
     <meta name="keywords" content="Hong Kong, Siu Mai, dim sum, food map, best dim sum, food guide, Hong Kong dim sum, top Siu Mai places, dim sum restaurants, best Siu Mai in Hong Kong, Hong Kong food map, dim sum guide, dim sum in Hong Kong, local food guide, Hong Kong cuisine, food recommendations, dim sum locations, Hong Kong street food, food blog, Hong Kong food experiences, top dim sum spots, Hong Kong dining, food and travel, culinary guide, best dim sum places">
-    <title>香港燒賣地圖 - 發現城中最佳燒賣</title>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https://www.google-analytics.com; frame-src https://www.google.com; connect-src 'self' https://www.google-analytics.com;">
     <style>
         /* Inline critical CSS */
@@ -144,10 +144,30 @@
                 font-size: 1.9125em;
             }
             #social-container {
-                top: 11.25px;
+                top: auto;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 11.25px;
+                background-color: rgba(0, 0, 0, 0.8);
+                transition: none;
+            }
+            #social-container:hover {
+                right: 0;
+            }
+            .social-link {
+                margin-bottom: 0;
+            }
+            #contact-info {
+                font-size: 14px;
+                text-align: right;
             }
             #content-container {
                 padding: 11.25px;
+                height: calc(90vh - 60px); /* Adjust for the social bar */
             }
         }
     </style>
@@ -189,7 +209,7 @@
 
         function loadMap() {
             var iframe = document.createElement('iframe');
-            iframe.src = "https://www.google.com/maps/d/embed?mid=18MFEIWjxLs4jOPgQEinSlDkEsUQmCQad&ehbc=2E312F";
+            iframe.src = "https://www.google.com/maps/d/embed?mid=18MFEIWjxLs4jOPgQEinSlDkEsUQmCQad&ehbc=2E312F&ll=22.302711,114.177216&z=11";
             iframe.width = "100%";
             iframe.height = "100%";
             iframe.title = "香港燒賣地圖";
